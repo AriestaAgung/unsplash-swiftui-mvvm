@@ -14,9 +14,7 @@ extension HomeView {
         private var service = HomeServiceData()
         
         @Published var imageURL: [String]? = []
-        
-//        private let provider = MoyaProvider<HomeService>()
-        
+                
         func getHomeList() {
             getImageLists(query: "Calm", page: nil, nil, nil, nil)
         }

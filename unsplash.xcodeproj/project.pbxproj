@@ -16,7 +16,6 @@
 		E5FAE0D228471382007C28F4 /* unsplashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0D128471382007C28F4 /* unsplashUITestsLaunchTests.swift */; };
 		E5FAE0E128471805007C28F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E028471805007C28F4 /* HomeView.swift */; };
 		E5FAE0E428471A9B007C28F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E328471A9B007C28F4 /* HomeViewModel.swift */; };
-		E5FAE0E828471D0C007C28F4 /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E728471D0C007C28F4 /* HomeListCell.swift */; };
 		E5FAE0EA28471EB9007C28F4 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E928471EB9007C28F4 /* HomeModel.swift */; };
 		E5FAE0EC2847204C007C28F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0EB2847204C007C28F4 /* Constant.swift */; };
 		E5FAE0EF2847241B007C28F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E5FAE0EE2847241B007C28F4 /* Alamofire */; };
@@ -55,7 +54,6 @@
 		E5FAE0D128471382007C28F4 /* unsplashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unsplashUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E5FAE0E028471805007C28F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5FAE0E328471A9B007C28F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		E5FAE0E728471D0C007C28F4 /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
 		E5FAE0E928471EB9007C28F4 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		E5FAE0EB2847204C007C28F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		E5FAE0F12847250D007C28F4 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 			children = (
 				E5FAE0E028471805007C28F4 /* HomeView.swift */,
 				E5FAE0E328471A9B007C28F4 /* HomeViewModel.swift */,
-				E5FAE0E728471D0C007C28F4 /* HomeListCell.swift */,
 				E5FAE0E928471EB9007C28F4 /* HomeModel.swift */,
 				E5FAE0F12847250D007C28F4 /* HomeService.swift */,
 			);
@@ -325,7 +322,6 @@
 			files = (
 				E5FAE0E128471805007C28F4 /* HomeView.swift in Sources */,
 				E5FAE0B728471380007C28F4 /* ContentView.swift in Sources */,
-				E5FAE0E828471D0C007C28F4 /* HomeListCell.swift in Sources */,
 				E5FAE0EC2847204C007C28F4 /* Constant.swift in Sources */,
 				E5FAE0EA28471EB9007C28F4 /* HomeModel.swift in Sources */,
 				E5FAE0B528471380007C28F4 /* unsplashApp.swift in Sources */,

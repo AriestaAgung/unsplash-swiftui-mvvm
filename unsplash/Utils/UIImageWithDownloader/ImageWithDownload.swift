@@ -40,6 +40,6 @@ struct ImageWithDownload: View {
 
 struct ImageWithDownload_Previews: PreviewProvider {
     static var previews: some View {
-        ImageWithDownload(urlString: "https://hd.unsplash.com/photo-1416339306562-f3d12fefd36f")
+        ImageWithDownload(urlString: "https://images.unsplash.com/photo-1502230831726-fe5549140034?crop=entropy\\u0026cs=tinysrgb\\u0026fm=jpg\\u0026ixid=MnwxNDI1Njd8MHwxfHNlYXJjaHwxfHxDYWxtfGVufDB8fHx8MTY1NDEwMTI4Mw\\u0026ixlib=rb-1.2.1\\u0026q=80")
     }
 }
