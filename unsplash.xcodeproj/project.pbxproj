@@ -14,6 +14,15 @@
 		E5FAE0C628471382007C28F4 /* unsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0C528471382007C28F4 /* unsplashTests.swift */; };
 		E5FAE0D028471382007C28F4 /* unsplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0CF28471382007C28F4 /* unsplashUITests.swift */; };
 		E5FAE0D228471382007C28F4 /* unsplashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0D128471382007C28F4 /* unsplashUITestsLaunchTests.swift */; };
+		E5FAE0E128471805007C28F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E028471805007C28F4 /* HomeView.swift */; };
+		E5FAE0E428471A9B007C28F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E328471A9B007C28F4 /* HomeViewModel.swift */; };
+		E5FAE0E828471D0C007C28F4 /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E728471D0C007C28F4 /* HomeListCell.swift */; };
+		E5FAE0EA28471EB9007C28F4 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0E928471EB9007C28F4 /* HomeModel.swift */; };
+		E5FAE0EC2847204C007C28F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0EB2847204C007C28F4 /* Constant.swift */; };
+		E5FAE0EF2847241B007C28F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E5FAE0EE2847241B007C28F4 /* Alamofire */; };
+		E5FAE0F22847250D007C28F4 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0F12847250D007C28F4 /* HomeService.swift */; };
+		E5FAE0F52847259D007C28F4 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E5FAE0F42847259D007C28F4 /* Moya */; };
+		E5FAE0F8284745E3007C28F4 /* ImageWithDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAE0F7284745E3007C28F4 /* ImageWithDownload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,13 @@
 		E5FAE0CB28471382007C28F4 /* unsplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unsplashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FAE0CF28471382007C28F4 /* unsplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unsplashUITests.swift; sourceTree = "<group>"; };
 		E5FAE0D128471382007C28F4 /* unsplashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unsplashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5FAE0E028471805007C28F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E5FAE0E328471A9B007C28F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E5FAE0E728471D0C007C28F4 /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
+		E5FAE0E928471EB9007C28F4 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		E5FAE0EB2847204C007C28F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E5FAE0F12847250D007C28F4 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		E5FAE0F7284745E3007C28F4 /* ImageWithDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithDownload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FAE0F52847259D007C28F4 /* Moya in Frameworks */,
+				E5FAE0EF2847241B007C28F4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,8 @@
 		E5FAE0B328471380007C28F4 /* unsplash */ = {
 			isa = PBXGroup;
 			children = (
+				E5FAE0DF28471678007C28F4 /* Module */,
+				E5FAE0DE2847166B007C28F4 /* Utils */,
 				E5FAE0B428471380007C28F4 /* unsplashApp.swift */,
 				E5FAE0B628471380007C28F4 /* ContentView.swift */,
 				E5FAE0B828471382007C28F4 /* Assets.xcassets */,
@@ -127,6 +147,43 @@
 			path = unsplashUITests;
 			sourceTree = "<group>";
 		};
+		E5FAE0DE2847166B007C28F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E5FAE0F6284745BE007C28F4 /* UIImageWithDownloader */,
+				E5FAE0EB2847204C007C28F4 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E5FAE0DF28471678007C28F4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E5FAE0E2284718C4007C28F4 /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E5FAE0E2284718C4007C28F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E5FAE0E028471805007C28F4 /* HomeView.swift */,
+				E5FAE0E328471A9B007C28F4 /* HomeViewModel.swift */,
+				E5FAE0E728471D0C007C28F4 /* HomeListCell.swift */,
+				E5FAE0E928471EB9007C28F4 /* HomeModel.swift */,
+				E5FAE0F12847250D007C28F4 /* HomeService.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E5FAE0F6284745BE007C28F4 /* UIImageWithDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				E5FAE0F7284745E3007C28F4 /* ImageWithDownload.swift */,
+			);
+			path = UIImageWithDownloader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +200,10 @@
 			dependencies = (
 			);
 			name = unsplash;
+			packageProductDependencies = (
+				E5FAE0EE2847241B007C28F4 /* Alamofire */,
+				E5FAE0F42847259D007C28F4 /* Moya */,
+			);
 			productName = unsplash;
 			productReference = E5FAE0B128471380007C28F4 /* unsplash.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +276,11 @@
 				Base,
 			);
 			mainGroup = E5FAE0A828471380007C28F4;
+			packageReferences = (
+				E5FAE0ED2847241B007C28F4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E5FAE0F028472470007C28F4 /* XCRemoteSwiftPackageReference "Moya" */,
+				E5FAE0F32847259D007C28F4 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = E5FAE0B228471380007C28F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FAE0E128471805007C28F4 /* HomeView.swift in Sources */,
 				E5FAE0B728471380007C28F4 /* ContentView.swift in Sources */,
+				E5FAE0E828471D0C007C28F4 /* HomeListCell.swift in Sources */,
+				E5FAE0EC2847204C007C28F4 /* Constant.swift in Sources */,
+				E5FAE0EA28471EB9007C28F4 /* HomeModel.swift in Sources */,
 				E5FAE0B528471380007C28F4 /* unsplashApp.swift in Sources */,
+				E5FAE0F22847250D007C28F4 /* HomeService.swift in Sources */,
+				E5FAE0F8284745E3007C28F4 /* ImageWithDownload.swift in Sources */,
+				E5FAE0E428471A9B007C28F4 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +656,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5FAE0ED2847241B007C28F4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		E5FAE0F028472470007C28F4 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		E5FAE0F32847259D007C28F4 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5FAE0EE2847241B007C28F4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5FAE0ED2847241B007C28F4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E5FAE0F42847259D007C28F4 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5FAE0F32847259D007C28F4 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5FAE0A928471380007C28F4 /* Project object */;
 }
