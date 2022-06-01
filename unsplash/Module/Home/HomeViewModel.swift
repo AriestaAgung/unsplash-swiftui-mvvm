@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Moya
 import Alamofire
 
 extension HomeView {
@@ -16,7 +15,7 @@ extension HomeView {
         
         @Published var imageURL: [String]? = []
         
-        private let provider = MoyaProvider<HomeService>()
+//        private let provider = MoyaProvider<HomeService>()
         
         func getHomeList() {
             getImageLists(query: "Calm", page: nil, nil, nil, nil)
@@ -54,40 +53,11 @@ extension HomeView {
                             }
                         }
                     default:
-                        print("Error Code: \(response.response?.statusCode.description) || Message : \(response.error?.localizedDescription)")
+                        print("Error Code: \(String(describing: response.response?.statusCode)) || Message : \(String(describing: response.error?.localizedDescription))")
                     }
                 } catch let err {
-                    print(err.localizedDescription)
+                    print("Error: \(err.localizedDescription)")
                 }
-            }
-        }
-        
-        func getImageList(query: String, page: Int?,_ itemPerPage: Int?,_ orientation: ImageOrientation?, _ orderBy: ImageOrderBy?) {
-            provider.request(.getImageList(query: query, page: page, itemPerPage, orientation, orderBy)) { result in
-                switch result {
-                case .success(let response):
-                    if response.statusCode == 200 {
-                        do {
-                            let result = try JSONDecoder().decode(HomeRandomImageResponse.self, from: response.data)
-                            guard let resultCollection = result.results else {return}
-                            for item in resultCollection {
-                                if let url = item.urls?.regular {
-                                    dump(url)
-                                    DispatchQueue.main.async {
-                                        
-//                                        self.imageURL?.append(url)
-                                    }
-                                }
-                            }
-                            
-                        } catch let err {
-                            print("error: \(err.localizedDescription)")
-                        }
-                    }
-                case.failure(let err):
-                    print("error: \(err.localizedDescription)")
-                }
-                
             }
         }
         

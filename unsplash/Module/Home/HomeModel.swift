@@ -32,8 +32,8 @@ struct HomeRandomImageResponseResult: Codable {
     }
 }
 
-struct ImageUrls: Codable, Identifiable {
-    let id = UUID()
+struct ImageUrls: Codable {
+//    var id = UUID()
     let raw: String?
     let full: String?
     let regular: String?

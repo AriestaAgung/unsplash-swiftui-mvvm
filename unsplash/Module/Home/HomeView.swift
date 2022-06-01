@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import Moya
 
 struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
