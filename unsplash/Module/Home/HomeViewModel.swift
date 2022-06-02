@@ -16,18 +16,25 @@ extension HomeView {
         @Published var imageURL: [String]? = []
                 
         func getHomeList() {
-            getImageLists(query: "Calm", page: nil, nil, nil, nil)
+            getImageLists(query: "Calm", page: 4, nil, nil, nil)
         }
         
         private func getImageLists(query: String, page: Int?,_ itemPerPage: Int?,_ orientation: ImageOrientation?, _ orderBy: ImageOrderBy?) {
-            
-            let params: Parameters = [
-                "query": query,
-//                "page": page as Any,
-//                "per_page": itemPerPage as Any,
-//                "order_by": orderBy ?? "",
-//                "orientation": orientation ?? "",
+            var params: Parameters = [
+                "query": query
             ]
+            if let existedPage = page {
+                params["page"] = existedPage
+            }
+            if let existedItemPerPage = itemPerPage {
+                params["per_page"] = existedItemPerPage
+            }
+            if let existedOrientation = orientation {
+                params["orientation"] = existedOrientation
+            }
+            if let existedOrderBy = orderBy {
+                params["order_by"] = existedOrderBy
+            }
             let headers: HTTPHeaders = [
                 Constant.Networking.version,
                 Constant.Networking.authHeader,

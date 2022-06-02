@@ -26,8 +26,6 @@ struct HomeRandomImageResponseResult: Codable {
     let description: String?
     let color: String?
     let urls: ImageUrls?
-    
-    
 }
 
 struct ImageUrls: Codable {
