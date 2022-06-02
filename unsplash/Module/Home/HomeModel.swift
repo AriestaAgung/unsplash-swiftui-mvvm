@@ -12,7 +12,7 @@ struct HomeRandomImageResponse: Codable {
     let totalPages: Int?
     let results: [HomeRandomImageResponseResult]?
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case total
         case totalPages = "total_pages"
         case results
@@ -27,9 +27,7 @@ struct HomeRandomImageResponseResult: Codable {
     let color: String?
     let urls: ImageUrls?
     
-    enum CodingKeys: String, CodingKey {
-        case id, width, height, description, color, urls
-    }
+    
 }
 
 struct ImageUrls: Codable {

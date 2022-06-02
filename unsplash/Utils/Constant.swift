@@ -15,8 +15,8 @@ struct Constant {
         static let apiVersionHeader         = "Accept-Version: v1"
         static let version: HTTPHeader      = HTTPHeader(name: "Accept-Version", value: "v1")
         static let authHeader: HTTPHeader   = HTTPHeader(name: "Authorization", value: "Client-ID "+accessCode)
-        static let accessCode               = ""
-        static let accessSecret             = ""
+        static let accessCode               = "ETS4tGzlzz2zQAXEEYsC-7N7WL7oPgS3Ug3MKI40xFo"
+        static let accessSecret             = "6R1X5kEX6JMPY5bmwQnoD1v8Pbq__q83kV_v6eU2-gc"
     }
     
     

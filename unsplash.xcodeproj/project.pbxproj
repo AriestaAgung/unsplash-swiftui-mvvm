@@ -275,7 +275,6 @@
 			mainGroup = E5FAE0A828471380007C28F4;
 			packageReferences = (
 				E5FAE0ED2847241B007C28F4 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				E5FAE0F028472470007C28F4 /* XCRemoteSwiftPackageReference "Moya" */,
 				E5FAE0F32847259D007C28F4 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E5FAE0B228471380007C28F4 /* Products */;
@@ -660,14 +659,6 @@
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 5.6.0;
-			};
-		};
-		E5FAE0F028472470007C28F4 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 9.0.0;
 			};
 		};
 		E5FAE0F32847259D007C28F4 /* XCRemoteSwiftPackageReference "Moya" */ = {
